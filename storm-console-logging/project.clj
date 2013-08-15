@@ -4,7 +4,8 @@
 (defproject storm/storm-console-logging VERSION
   :resource-paths ["logback"]
 
-  :profiles {:release {}
-             }
+  :dependencies [[org.clojure/clojure "1.4.0"]]
+
+  :profiles {:release {:target-path "target"}}
 
   :aot :all)
